@@ -1,0 +1,7 @@
+{
+    "SiteUrl":"http://localhost:3000/", 
+    "BaseUrl": "http://127.0.0.1:8080",
+    "GoogleClientId": "1075286664742-righjavc1rvvb1ba5mdk674gv3gis7v3.apps.googleusercontent.com",
+    "PageSize": 10,
+    "SendContactV1": "https://us-central1-lenggiauit-portfolio.cloudfunctions.net/sendcontactv1"
+}

@@ -1,0 +1,13 @@
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\bin\Debug\net6.0\appsettings.json
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\bin\Debug\net6.0\CommonLib.deps.json
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\bin\Debug\net6.0\CommonLib.dll
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\bin\Debug\net6.0\CommonLib.pdb
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.csproj.AssemblyReference.cache
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.AssemblyInfoInputs.cache
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.AssemblyInfo.cs
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.csproj.CoreCompileInputs.cache
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.dll
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\refint\CommonLib.dll
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\CommonLib.pdb
+D:\Github Projects\lenggiauit\lenggiauit.functions\CommonLib\obj\Debug\net6.0\ref\CommonLib.dll

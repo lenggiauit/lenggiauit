@@ -1,0 +1,20 @@
+gcloud functions deploy ff-test --gen2 --runtime=dotnet6 --trigger-http --set-build-env-vars=GOOGLE_BUILDABLE="lenggiauit.functions/SendContact",LOCALFUNCTIONSFRAMEWORK=true --entry-point=Lenggiauit.Http.Function
+
+
+
+gcloud functions deploy sendcontact --gen2 --runtime=dotnet6 --trigger-http --set-build-env-vars=GOOGLE_BUILDABLE="D:\Github Projects\lenggiauit\lenggiauit.functions\SendContact" --entry-point=sendcontact
+
+
+
+gcloud functions deploy sendcontact --gen2 --runtime=dotnet6 --trigger-http --entry-point=sendcontact
+
+
+gcloud functions add-invoker-policy-binding ff-test --region="us-central1" --member="MEMBER_NAME"
+
+
+
+gcloud functions deploy sendcontact --gen2 --runtime=dotnet6 --trigger-http --entry-point=sendcontact --set-build-env-vars=GOOGLE_BUILDABLE="D:\Github Projects\lenggiauit\lenggiauit.functions\SendContact"
+
+
+
+gcloud functions deploy sendcontactv1 --runtime=dotnet6 --trigger-http --set-build-env-vars=GOOGLE_BUILDABLE="SendContactV1",LOCALFUNCTIONSFRAMEWORK=true --entry-point=SendContactV1Function.Function
