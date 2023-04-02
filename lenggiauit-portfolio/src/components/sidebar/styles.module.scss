@@ -1,0 +1,30 @@
+.sidebar{
+    position: fixed;
+    width: 284px;
+    left: 0px;
+    height: 100vh;
+    //background-color: rgba(0, 0, 0, 0.92);
+    transition: all .5s ease;
+  }
+  
+  @media(max-width : 860px){
+    .sidebar{
+      /* height: auto; */
+      //width: 70px;
+      left: 0;
+      /* margin: 100px 0; */
+    }
+    
+  }
+
+
+  // .sidebar {
+  //   position: fixed;
+  //   width: 240px;
+  //   left: 0;
+  //   height: 100vh;
+        
+  //   background-color: rgba(0, 0, 0, 0.92);
+    
+  // }
+  

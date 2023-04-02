@@ -1,0 +1,33 @@
+.background-container {
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .bg_container {
+     
+    margin: 0 auto; 
+    background-color: rgb(255, 255, 255);
+  }
+
+  .player-container { 
+    display: flex;  
+    justify-content: center;
+    align-items: center;  
+    background-color: aquamarine;
+    
+  } 
+  .page-container{
+    width: 100%;
+    height: 100vh;   
+    background-color: black;
+    display: block;
+    z-index: 10;
+  }
+
+ 
+  
+  

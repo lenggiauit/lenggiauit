@@ -1,0 +1,27 @@
+{ 
+    "nav_profile": "Hồ sơ",
+    "nav_logout": "Thoát",
+    "nav_home": "Trang chủ", 
+    "nav_resume": "Resume",
+    "nav_login": "Đăng nhập",
+    "nav_register": "Đăng ký",
+    "nav_about": "Giới thiệu",
+    "nav_blog": "Bài viết", 
+    "nav_contact": "Liên hệ",  
+    "nav_resources": "Tài nguyên",
+    "nav_admin": "Admin",
+    "nav_portfolio": "Portfolio",
+    "nav_chatwithme": "Trò chuyện",
+    "btnSave" : "Lưu",
+    "btnClose" : "Đóng",
+    "btnCreate": "Tạo mới",
+    "btnConfirm": "Xác nhận",
+    "btnSubmit": "Gửi",
+    "sendContact_success": "Your message has been sent. Thank you!",
+    "sendContact_error": "Sorry your message can not be sent.",
+    "updatedSuccessfully": "Updated successfully",
+    "updatedError": "Error, please try again.",
+    "btnPrev": "Prev",
+    "btnNext": "Next"
+
+}

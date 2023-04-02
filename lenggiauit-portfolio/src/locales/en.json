@@ -1,0 +1,27 @@
+{ 
+    "nav_profile": "Profile",
+    "nav_logout": "Logout",
+    "nav_home": "Home", 
+    "nav_resume": "Resume",
+    "nav_login": "Login",
+    "nav_register": "Register",
+    "nav_about": "About",
+    "nav_blog": "Blog", 
+    "nav_contact": "Contact",
+    "nav_resources": "Resources",
+    "nav_admin": "Admin",
+    "nav_portfolio": "Portfolio",
+    "nav_chatwithme": "Chat with me",
+    "btnSave" : "Save",
+    "btnClose": "Close",
+    "btnCreate": "Create",
+    "btnConfirm": "Confirm",
+    "btnSubmit": "Submit",
+    "sendContact_success": "Your message has been sent. Thank you!",
+    "sendContact_error": "Sorry your message can not be sent.",
+    "updatedSuccessfully": "Updated successfully",
+    "updatedError": "Error, please try again.",
+    "btnPrev": "Prev",
+    "btnNext": "Next"
+    
+}
