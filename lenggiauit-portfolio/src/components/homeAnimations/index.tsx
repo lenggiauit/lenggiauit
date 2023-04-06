@@ -1,17 +1,18 @@
 import React, { useRef, useState } from 'react';
 import { useTrail, useChain, useSprings, useSpring, animated, useSpringRef } from '@react-spring/web';
 import styles from './styles.module.css';
+import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 const MESSAGES = [
     [50, 30],
     [50, 40],
     [50, 50],
     [50, 60],
-    [50, 70], 
-    
+    [50, 70],
+
     [60, 50],
-    [70, 50], 
-     
+    [70, 50],
+
     [80, 30],
     [80, 40],
     [80, 50],
@@ -23,91 +24,91 @@ const MESSAGES = [
     [100, 50],
     [100, 60],
     [100, 70],
-    
+
     [110, 30],
     [120, 30],
-    [130, 30], 
-    
+    [130, 30],
+
     [110, 50],
     [120, 50],
-    [130, 50], 
-   
+    [130, 50],
+
     [110, 70],
     [120, 70],
-    [130, 70], 
+    [130, 70],
     // E
 
-    [150, 30], 
-    [150, 40], 
-    [150, 50], 
-    [150, 60], 
-    [150, 70], 
-    
+    [150, 30],
+    [150, 40],
+    [150, 50],
+    [150, 60],
+    [150, 70],
+
     [160, 70],
     [170, 70],
     [180, 70],
     // L
-    [200, 30], 
-    [200, 40], 
-    [200, 50], 
-    [200, 60], 
-    [200, 70], 
-    
+    [200, 30],
+    [200, 40],
+    [200, 50],
+    [200, 60],
+    [200, 70],
+
     [210, 70],
     [220, 70],
     [230, 70],
     // L 
-    [260, 30], 
-    [270, 30], 
-    
-    [250, 30], 
-    [250, 40], 
-    [250, 50], 
+    [260, 30],
+    [270, 30],
+
+    [250, 30],
+    [250, 40],
+    [250, 50],
     [250, 60],
-    [250, 70],   
-    
-    [260, 70], 
-    [270, 70], 
-    
-    [280, 30], 
-    [280, 40], 
-    [280, 50], 
+    [250, 70],
+
+    [260, 70],
+    [270, 70],
+
+    [280, 30],
+    [280, 40],
+    [280, 50],
     [280, 60],
-    [280, 70],  
+    [280, 70],
     // O
     [120, 110],
     [130, 110],
-    [140, 110], 
+    [140, 110],
     // I
     [130, 110],
-    [130, 120], 
-    [130, 130], 
-    [130, 140], 
-    [130, 150], 
+    [130, 120],
+    [130, 130],
+    [130, 140],
+    [130, 150],
 
-    [120, 150], 
-    [140, 150], 
+    [120, 150],
+    [140, 150],
     // '
-    [160, 110], 
+    [160, 110],
     // M
-    [180, 110], 
+    [180, 110],
     [180, 120],
     [180, 130],
     [180, 140],
     [180, 150],
 
-    [195, 120], 
+    [195, 120],
 
-    [210, 110], 
+    [210, 110],
     [210, 120],
     [210, 130],
     [210, 140],
     [210, 150],
     // G
 
-    [110, 200], 
+    [110, 200],
     [110, 190],
-    [100, 190], 
+    [100, 190],
     [90, 190],
     [80, 190],
 
@@ -123,30 +124,30 @@ const MESSAGES = [
 
     [110, 230],
     [100, 220],
-    [110, 220], 
+    [110, 220],
     // I
 
     [130, 190],
     [140, 190],
-    [150, 190], 
+    [150, 190],
     // I
     [140, 200],
-    [140, 210], 
-    [140, 220], 
-    [140, 230], 
-    [140, 240], 
+    [140, 210],
+    [140, 220],
+    [140, 230],
+    [140, 240],
 
-    [130, 240], 
-    [150, 240], 
+    [130, 240],
+    [150, 240],
 
-    [180, 190], 
+    [180, 190],
     [175, 200],
     [170, 210],
     [170, 220],
     [170, 230],
     [170, 240],
 
-    [190, 190], 
+    [190, 190],
     [195, 200],
     [200, 210],
     [200, 220],
@@ -157,14 +158,14 @@ const MESSAGES = [
     [190, 220],
     // U
 
-    [220, 190], 
+    [220, 190],
     [220, 200],
     [220, 210],
     [220, 220],
-    [220, 230], 
-    [230, 240], 
+    [220, 230],
+    [230, 240],
 
-    [250, 190], 
+    [250, 190],
     [250, 200],
     [250, 210],
     [250, 220],
@@ -232,7 +233,22 @@ const HomeAnimations: React.FC = () => {
     // start chain
     useChain([gridApi, boxApi, borderApi, helloApi], [0, 1, 10, 15], 50)
 
- 
+
+    const parallax = useRef<IParallax>(null)
+    const parallaxApi = useSpringRef()
+    const parallaxSpring = useSpring({
+        ref: parallaxApi,
+        from: { opacity: 1 },
+        to: { opacity: 1 },
+    })
+
+    const scroll = (to: number) => {
+        if (parallax.current) {
+            parallax.current.scrollTo(to)
+        }
+    }
+    const playerContainer = {}
+
     return (
         <div className={styles['background-container']}>
             <div className={styles.bg_container}>
@@ -273,7 +289,6 @@ const HomeAnimations: React.FC = () => {
                                 transform-origin={`${(99 - (index + 1))}% ${(99 - (index + 1))}%`} transform={`scale(0.${(99 - (index + 1))})`}
                             />
                         ))}
-
                         {boxSprings.map(({ scale }, index) => (
                             <animated.rect
                                 key={index}
@@ -286,10 +301,80 @@ const HomeAnimations: React.FC = () => {
                                     scale,
                                 }}
                             />
-                        ))} 
+                        ))}
                     </g>
                 </svg>
             </div>
+
+            {/* <animated.div style={{ position: 'absolute', zIndex:999, top: 0, left: 0, width: '100%', height: '100vh' }}>
+                <div className="page-container" style={{ height: '80vh', width: '100%' }}>
+                    <Parallax ref={parallax} pages={5} style={{ overflow: 'hidden' }}>
+                        <ParallaxLayer offset={0} style={{ textAlign: 'center' }}  >
+                            <div className="player-container position-relative" style={{ ...playerContainer }}>
+                                <svg viewBox={`0 0 ${MAX_WIDTH} ${MAX_HEIGHT}`}>
+                                    <g>
+                                        {boxSprings.map(({ scale }, index) => (
+                                            <animated.rect
+                                                key={index}
+                                                width={10}
+                                                height={10}
+                                                fill="#999"
+                                                style={{
+                                                    transformOrigin: `${5 + OFFSET * 2}px ${5 + OFFSET * 2}px`,
+                                                    transform: `translate(${MESSAGES[index][0] + OFFSET}px, ${MESSAGES[index][1] + OFFSET}px)`,
+                                                    scale,
+                                                }}
+                                            />
+                                        ))}
+                                    </g> 
+                                </svg>
+                                <div style={{ position: 'absolute', zIndex:999, top: 0, left: 0, width: '100%', height: '100vh' }}>
+                                    <button > About me </button>
+                                </div>
+
+                            </div>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer offset={1} style={{}} onClick={() => scroll(2)}>
+
+                            <div className="player-container" style={{ ...playerContainer }}>
+                                <div className="row">
+                                    <div className="col-12" >
+                                        <h1>What do you want to know?</h1>
+                                    </div>
+                                </div>
+                                <br />
+                                <div className="row">
+                                    <div className="col-6" >
+                                        <button onClick={() => scroll(1)}> About me  </button>
+                                    </div>
+                                    <div className="col-6"> <button onClick={() => scroll(1)}> About me  </button> </div>
+                                </div>
+                            </div>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer offset={2} style={{}} onClick={() => scroll(3)}>
+                            <div className="player-container">
+                                <p>I'm not</p>
+                            </div>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer offset={3} speed={1.5} style={{}} onClick={() => scroll(4)}>
+                            <div className="player-container">
+                                <p>Neither am I</p>
+                            </div>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer offset={4} speed={1.5} style={{}} onClick={() => scroll(0)}>
+                            <div className="player-container">
+                                <p>Neither am I</p>
+                            </div>
+                        </ParallaxLayer>
+
+                    </Parallax>
+
+                </div>
+            </animated.div> */}
         </div>
     )
 }

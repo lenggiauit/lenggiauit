@@ -1,6 +1,6 @@
 { 
     "SiteUrl":"https://lenggiauit.com/", 
-    "BaseUrl": "https://lenggiauit.nagistar.com/",
+    "BaseUrl": "https://localhost:44333/",
     "GoogleClientId": "1075286664742-righjavc1rvvb1ba5mdk674gv3gis7v3.apps.googleusercontent.com",
     "PageSize": 12
 }
