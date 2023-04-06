@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "lenggiauit-portfolio",
-  "private_key_id": "48eb13fe6dd4094b72294e13522062867f41972a",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD0FzPVWNOoBBlp\nKY61eiVuKZfVFGIUE8tOLDa7xABlWMZzndVkEZDh5jB6pGyREaAUHnQIylnumOAO\nWy81OF0sZxjrmg+st8esu8gtUUT/NviMyez6GBdt6kuJsZPQsaOyEPqcPUloDiQd\nJ9n1XeuAl4tHRYOvjPuWXfOlZ8E97B3yY0EVwC6mWkAYDXoBUG06WxCUGZWEMrAi\nxEcO/fQRF++j9SMAndHExmMmT/p4RfJYdgk4n6sCxiFxSbADQL9Rspj59Mj6QLjx\nDw8jRmJ0E2MZUczu57b+Ehv8txRKSWWnmZ4LaaQ2VhM+m3LJ6rJBkRH+7GPs1eq7\n8gPB3pTjAgMBAAECggEAMw6RaIyShWAKIq2vLLW2k6L+n/MKCvITAjCMaF04yfo2\nVKPMqYhlGmOIe3beQMADkIHIOrh89EQlBcu8BbFbB/kuxMVuhu3QRgjnd9c6i/nn\nJqfsOmoEqJisIUq0RSCLQal8imblbm8azcByvnjdVIIef5OCVpuyWoMffldEHBvZ\nl1OfSBuScNpXAVT+YdQb4fe9+mmE0iCu3ewhDR6lCvbW3gzbsWbH5tsU2O1D3cHp\npJd9VFXQbX48SlFOoQ61yD8TrylkiOleOBMPtExdGnVAnnLqZ2lKfXDNyjMpOIDZ\nnUx44G1QMtio4dVxRJ6W4eonlKdxQQrUaWiNG2LNkQKBgQD9mFZi3XnZrYAUn1IG\ndudUUcRacSeoFl8wqQn3Fs4T6h1D7B1lCkbSO2SzYXb/H2VKFYp3NH/rGfnrf9cd\nahP9zUeTWXoBx3exloCSas7vEQBiN3e8ctV5O8TypCIWyRHTfbxLy3ffc31Y7aAZ\nqYTCPmOOTEcfwQYPbe8WbTgukQKBgQD2Z8pua50hW2bima75BTIiWNuVjk4XYO5q\n21layWdTnWy4KE5Uh7/qW27lIZx9T+/ET3xWQGJULfSxHDEXYt9MAizRgHOJvn3J\nWvZSYPAP5tXONuUhvkANP15ibLkxPVCq1tOZEMc+i0+nAclOzGJS8NRQyQbOHstR\n0XsdvHtuMwKBgQDUHjJT6/FaNJfnqAQSSC7jBqn5BKEpJd1ldF9TgI3Ldo4YHE3S\nEDCA9REcQjAo4ff1aeMyJoXA/y9e3sXuYqZqKuTtyXAWQORLdRoCXrjMmyn4/XB3\n/o21JFtuof+pk3IHtypjM8QG8jEsy0aZcIQNfeYERqVPWENbcJcF6UGPIQKBgDos\n3RVe4PVMMClV4YK3oFONqSJRO8y3PPMLoLgXjwalx1Jfacb5We1J8w+z9M99PP2b\nSp7OiqiXRQs/vbNoy5GVfeFks2KVD/unNzrR2jvW4ynRuh1SXqsCCBWy17JxaIc9\nOy4LUQ9KMt8aQ94P0TMF2wrLu4iUqqpBjBDEPFwTAoGBAI2Yc1J9zCPO3lhacf9N\nJttDo2cBYTq+eSb3syTAiATuYhjGEWY+r6y7GqnBSB44zSdMmlZsQ1S0tkx+M0hn\nV8Fc6JwfLTQnjZZTF2wk2pUvGhckzYg7uIiWlH0Gmcb7t/1GoDhecedgqhregBe9\nzGNoKa3hKlcL85GMpXA16j65\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "****",
+  "private_key": "****",
   "client_email": "lenggiauit-portfolio@appspot.gserviceaccount.com",
-  "client_id": "114351373134802285985",
+  "client_id": "******",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
